@@ -11,10 +11,10 @@ script:
   - docker run -e CI=true vinbolisetti/react-test npm test
 
 after_success:
-  - docker build -t vinbolisetti/multi-client ./client
-  - docker build -t vinbolisetti/multi-nginx ./nginx
-  - docker build -t vinbolisetti/multi-server ./server
-  - docker build -t vinbolisetti/multi-worker ./worker
+  - docker build -t iovin/multi-client ./client
+  - docker build -t iovin/multi-nginx ./nginx
+  - docker build -t iovin/multi-server ./server
+  - docker build -t iovin/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub

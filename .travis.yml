@@ -22,3 +22,5 @@ after_success:
   - docker push vinbolisetti/multi-nginx
   - docker push vinbolisetti/multi-server
   - docker push vinbolisetti/multi-worker
+
+  # the end!

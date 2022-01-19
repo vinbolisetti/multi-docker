@@ -18,9 +18,9 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push vinbolisetti/multi-client
-  - docker push vinbolisetti/multi-nginx
-  - docker push vinbolisetti/multi-server
-  - docker push vinbolisetti/multi-worker
+  - docker push iovin/multi-client
+  - docker push iovin/multi-nginx
+  - docker push iovin/multi-server
+  - docker push iovin/multi-worker
 
   # the end!
